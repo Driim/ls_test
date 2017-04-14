@@ -89,7 +89,7 @@ int main(int argc, char* argv[])
             continue;
         }
 
-        if (!strcmp(file_dirent->d_name, "..")) {  
+        if (!strcmp(file_dirent->d_name, "..")) {
             continue;
         }
 
@@ -117,7 +117,7 @@ int main(int argc, char* argv[])
         else
             printf(" %-8d", statbuf.st_gid);
 
-        /* Hfpvth */
+        /* Размер */
         printf(" %9jd", (intmax_t)statbuf.st_size);
 
         /* Дата */
